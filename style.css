@@ -1,7 +1,235 @@
 *{
+    padding:0;
+    margin:0;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white
+}
+html{
+    scroll-behavior: smooth;
 }
 
 body{
-    background-color: black;
+    background-color: #171C28;
+    line-height: normal;
+}
+
+li {
+    display: list-item;
+    text-align: left;
+}
+
+h1{
+    font-size:50px;
+
+}
+
+h2{
+    padding: 5px;
+    font-style: oblique;
+}
+
+p{
+    font-size: 25px;
+}
+
+img{
+    height: 200px;
+    border-radius: 5%;
+    margin: 5px;
+}
+
+header{
+    display: flex;
+}
+
+.new-body{
+    padding: 5px;
+}
+
+.grey-color{
+    color:grey
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.single-button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.button-hover{ 
+  color: black; 
+  border: 2px solid #6a4caf;
+  background-color: #000B2E;
+}
+
+.button-hover:hover {
+    background-color: #6a4caf;
+    color: white;
+}
+
+.logo{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 50px;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #000B2E;
+    height: 55px;
+    padding: 0px;
+}
+
+.header .logo-name {
+    font-feature-settings: "liga","clig off";
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-variant-ligatures: no-common-ligatures;
+    -webkit-font-variant-ligatures: no-common-ligatures;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.header .logo {
+    display: block;
+    flex: none;
+    float: left;
+    font-size: 1.5rem;
+    line-height: normal;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.icon{
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icon:hover{
+    height: 30px
+}
+
+.school{
+    background-color: white;
+    height: 100px;
+}
+
+.profile-image{
+    height: 250px;
+    border-radius: 50%;
+}
+
+.paragraph{
+    display: flex;
+    justify-content:flex-end;
+    text-wrap: wrap;
+    padding: 1px;
+}
+
+.greeting-main {
+    display: flex;
+}
+
+.greeting-main-div{
+    margin: 10px auto;
+}
+
+.projects{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-self: normal;
+}
+
+.card{
+    background-color: rgb(92, 92, 92);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.card-image{
+    height:150px;
+    margin-bottom: 15px;
+    background-image: cover ;
+}
+
+.card-image:hover{
+    height: 175px;
+   
+}
+/*for desktop veiw*/
+@media screen and (min-width: 1024px) {
+    ul.menu {
+        display: flex;
+    }
+    div.top-header{
+        background-color: #000B2E;
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        padding-bottom: 40px;
+    }
+    span{
+        font-size: 40px;
+    }
+    .projects{
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        justify-self: normal;
+      }
+}
+
+/* For Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    div.top-header{
+        padding: 50px;
+    }
+    span{
+        font-size:40px
+    }
+}
+/*for the transition*/
+@media screen and (width < 768px ) {
+    div.top-header{
+        height: 100px;
+        padding: 25px;
+        padding-bottom: 40px;
+    }
+    ul.menu{
+        display: none;
+    }
+    span{
+        font-size: 75px;
+
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-width: 640px) {
+    div.top-header{
+        background-color: #000B2E;
+        justify-content: center;
+       
+    }
+    a.logo{
+        font-size: 100px;
+    }
 }
